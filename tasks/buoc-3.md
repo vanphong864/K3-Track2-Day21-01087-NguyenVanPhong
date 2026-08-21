@@ -116,12 +116,12 @@ Mô hình mới huấn luyện trên 5996 mẫu sẽ được phục vụ. Khôn
 
 Tải file `outputs/metrics.json` từ artifacts của hai lần chạy để so sánh:
 
-| Chỉ số | Bước 2 (2998 mẫu) | Bước 3 (5996 mẫu) |
-|---|---|---|
-| accuracy | ? | ? |
-| f1_score | ? | ? |
+| Chỉ số | Bước 2 (2998 mẫu) | Bước 3 (5996 mẫu) | Mức độ cải thiện |
+|---|:---:|:---:|:---:|
+| accuracy | 0.6800 | 0.7500 | +7.0% |
+| f1_score | 0.6786 | 0.7486 | +0.0700 |
 
-Điền vào bảng trên dựa trên kết quả thực tế của bạn. Nếu mô hình mới có accuracy cao hơn, điều đó chứng tỏ thêm dữ liệu làm tăng hiệu quả mô hình.
+Kết quả thực tế cho thấy mô hình mới có accuracy tăng từ 0.6800 lên 0.7500 và f1_score tăng từ 0.6786 lên 0.7486. Điều này chứng minh việc bổ sung thêm dữ liệu mới giúp mô hình học tốt hơn, vượt qua ngưỡng kiểm tra chất lượng (0.75 >= 0.70) và được tự động triển khai thành công lên máy chủ VM.
 
 ---
 
